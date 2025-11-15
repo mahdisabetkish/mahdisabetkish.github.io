@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-subtitle: A list of my peer-reviewed articles and conference papers.
+subtitle: A list of my papers.
 ---
 
 ### Computer Vision & Machine Learning
