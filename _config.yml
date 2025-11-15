@@ -147,9 +147,9 @@ round-avatar: true
 # To find your Google Scholar ID, go to your profile and look at the URL.
 # It will be something like `.../citations?user=XXXXXXXXXXXX`. Copy the part after `user=`.
 social-network-links:
-  email: "your-email@example.com"  # Replace with your actual email
+  email: "mahdi.sabetkish@gmail.com"  # Replace with your actual email
   github: "mahdisabetkish"
-  google-scholar: "your-google-scholar-id" # Replace with your ID
+  google-scholar: "VGUoU24AAAAJ" # Replace with your ID
   # linkedin: your-linkedin-username # You can add your LinkedIn username here
 
 # If you want your website to generate an RSS feed, provide a description
