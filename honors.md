@@ -1,8 +1,6 @@
 I am honored to have received the following awards, scholarships, and distinctions in recognition of my academic and research contributions.
 
----
-
-### **Major Awards & Distinctions**
+ **Major Awards & Distinctions**
 
 *   **Khwarizmi Youth Award, 11th Period**
     *   A national award recognizing outstanding achievements in research, innovation, and invention in Iran.
