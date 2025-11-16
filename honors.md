@@ -1,5 +1,3 @@
-### **Honors & Awards**
-
 I am honored to have received the following awards, scholarships, and distinctions in recognition of my academic and research contributions.
 
 ---
