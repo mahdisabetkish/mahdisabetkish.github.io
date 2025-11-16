@@ -1180,19 +1180,28 @@ pre {
   and prevents content overlap.
 ==========================================================================
 --- */
+/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Definitive Stacking Solution)
+  This block controls the large profile photo, fixes the stacking order
+  by lifting the nav links, and prevents content overlap.
+==========================================================================
+--- */
 
 @media (min-width: 1200px) {
 
-  /* 1. Bring the NAVIGATION BAR to the front */
-  .navbar-custom {
-    z-index: 1030 !important;
+  /* 1. LIFT THE LINKS TO THE FRONT */
+  /* This targets the container holding "About Me", etc. */
+  .navbar-custom .navbar-collapse {
+    position: relative; /* Ensures it can create a stacking context */
+    z-index: 100 !important; /* Lifts the links container to the very top */
   }
 
-  /* 2. Controls the size, position, and STACKING of the avatar */
+  /* 2. Controls the size and position of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 200px !important;
-    bottom: -100px !important;
-    z-index: 1 !important; /* <-- Tucks the avatar behind the navbar */
+    width: 250px !important;
+    bottom: -120px !important;
+    /* The avatar can have a lower z-index or none at all now */
   }
 
   /* Forces the image itself to fill the larger container */
@@ -1203,7 +1212,7 @@ pre {
 
   /* 3. Pushes the main content down on ALL pages to make room */
   .intro-header {
-    margin-top: 40rem !important; 
+    margin-top: 10rem !important; 
   }
 
 }
