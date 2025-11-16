@@ -1188,31 +1188,42 @@ pre {
 ==========================================================================
 --- */
 
+/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Asymmetric Layout)
+  This block moves the avatar to the left and pushes the content to the
+  right, creating a two-column feel.
+==========================================================================
+--- */
+
 @media (min-width: 1200px) {
 
-  /* 1. LIFT THE LINKS TO THE FRONT */
-  /* This targets the container holding "About Me", etc. */
-  .navbar-custom .navbar-collapse {
-    position: relative; /* Ensures it can create a stacking context */
-    z-index: 100 !important; /* Lifts the links container to the very top */
-  }
-
-  /* 2. Controls the size and position of the avatar */
+  /* 1. POSITION THE AVATAR ON THE LEFT */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 250px !important;
-    bottom: -120px !important;
-    /* The avatar can have a lower z-index or none at all now */
+    width: 250px !important;      /* Sets the size */
+    bottom: -120px !important;     /* How far it hangs down */
+    left: 15% !important;          /* Moves it horizontally to the left */
+    margin-left: 0 !important;     /* Resets the theme's centering */
+    transform: translateX(-50%) !important; /* Fine-tunes the centering on the left anchor */
   }
 
-  /* Forces the image itself to fill the larger container */
+  /* Forces the image itself to fill the container */
   .navbar-custom.top-nav-regular .avatar-container .avatar-img {
     width: 100% !important;
     height: 100% !important;
   }
 
-  /* 3. Pushes the main content down on ALL pages to make room */
+  /* 2. POSITION THE CONTENT ON THE RIGHT */
   .intro-header {
-    margin-top: 10rem !important; 
+    margin-top: 5rem !important;      /* Vertical space from the navbar */
+    margin-left: 40% !important;     /* Pushes content to the right, creating the column */
+    width: 55% !important;           /* Constrains the width of the content */
+  }
+
+  /* 3. ALIGN THE TEXT WITHIN THE CONTENT TO THE LEFT */
+  .intro-header .page-heading,
+  .intro-header .post-heading {
+    text-align: left !important;
   }
 
 }
