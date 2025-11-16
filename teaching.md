@@ -14,7 +14,6 @@ My teaching philosophy is rooted in the belief that deep understanding comes fro
 
 #### **Teaching Assistant**
 
-*   *Shahid Beheshti University(2015 - 2019)*
   *   As a Teaching Assistant for a range of foundational courses in mathematics and computer science, my responsibilities included:
       *   Leading weekly tutorial and problem-solving sessions to reinforce lecture concepts.
       *   Grading assignments and exams, providing constructive feedback to help students improve.
