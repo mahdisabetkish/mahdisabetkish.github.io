@@ -1,8 +1,4 @@
----
-layout: page
-title: About Me
-subtitle: PhD in Pure Mathematics | Researcher in Self-Supervised Learning
----
+**PhD in Pure Mathematics | Researcher in Self-Supervised Learning
 
 
 I am a researcher and recent Ph.D. graduate in **Pure Mathematics** with a deep specialization in the theory and application of **machine learning**. My academic journey has been driven by a single goal: to bridge the gap between the abstract elegance of mathematics and the practical challenges of modern artificial intelligence. My work is focused on advancing AI—particularly in **computer vision** and **natural language processing**—by grounding learning models in rigorous mathematical principles.
