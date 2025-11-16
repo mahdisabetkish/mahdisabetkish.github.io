@@ -1,4 +1,4 @@
-### **Research**
+
 
 My research program is dedicated to bridging the gap between the theoretical elegance of pure mathematics and the practical power of machine learning. I am passionate about using foundational principles from abstract algebra to build the next generation of artificial intelligence models. My core focus is on developing learning frameworks that produce more **structured, robust, and data-efficient representations**, with primary applications in **computer vision** and **natural language processing**.
 
