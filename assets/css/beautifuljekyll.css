@@ -1202,7 +1202,7 @@ pre {
   .navbar-custom.top-nav-regular .avatar-container {
     width: 250px !important;      /* Sets the size */
     bottom: -120px !important;     /* How far it hangs down */
-    left: 15% !important;          /* Moves it horizontally to the left */
+    left: 35% !important;          /* Moves it horizontally to the left */
     margin-left: 0 !important;     /* Resets the theme's centering */
     transform: translateX(-50%) !important; /* Fine-tunes the centering on the left anchor */
   }
