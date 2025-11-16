@@ -1129,7 +1129,7 @@ pre {
 /* Increases the size of the profile photo on larger screens */
 @media (min-width: 1200px) {
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 100px;
+    width: 200px;
     bottom: -95px;
   }
 }
