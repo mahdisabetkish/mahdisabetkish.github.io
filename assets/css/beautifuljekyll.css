@@ -1140,15 +1140,26 @@ pre {
   This block controls the large profile photo and prevents it from
   overlapping with the page content.
 ==========================================================================
+/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Final Version)
+  This block controls the large profile photo, fixes the stacking order,
+  and prevents content overlap.
+==========================================================================
 --- */
 
-/* --- New, Updated Code --- */
 @media (min-width: 1200px) {
 
-  /* 1. Controls the size and position of the avatar */
+  /* 1. Bring the NAVIGATION BAR to the front */
+  .navbar-custom {
+    z-index: 1030 !important;
+  }
+
+  /* 2. Controls the size, position, and STACKING of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 200px !important;
-    bottom: -125px !important;  /* <-- MOVED THE IMAGE LOWER */
+    width: 250px !important;
+    bottom: -120px !important;
+    z-index: 1 !important; /* <-- Tucks the avatar behind the navbar */
   }
 
   /* Forces the image itself to fill the larger container */
@@ -1157,9 +1168,42 @@ pre {
     height: 100% !important;
   }
 
-  /* 2. Pushes the main content down on ALL pages to make room */
+  /* 3. Pushes the main content down on ALL pages to make room */
   .intro-header {
-    margin-top: 27rem !important; /* <-- ADDED MORE SPACE FOR CONTENT */
+    margin-top: 10rem !important; 
+  }
+
+}/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Final Version)
+  This block controls the large profile photo, fixes the stacking order,
+  and prevents content overlap.
+==========================================================================
+--- */
+
+@media (min-width: 1200px) {
+
+  /* 1. Bring the NAVIGATION BAR to the front */
+  .navbar-custom {
+    z-index: 1030 !important;
+  }
+
+  /* 2. Controls the size, position, and STACKING of the avatar */
+  .navbar-custom.top-nav-regular .avatar-container {
+    width: 250px !important;
+    bottom: -120px !important;
+    z-index: 1 !important; /* <-- Tucks the avatar behind the navbar */
+  }
+
+  /* Forces the image itself to fill the larger container */
+  .navbar-custom.top-nav-regular .avatar-container .avatar-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* 3. Pushes the main content down on ALL pages to make room */
+  .intro-header {
+    margin-top: 10rem !important; 
   }
 
 }
