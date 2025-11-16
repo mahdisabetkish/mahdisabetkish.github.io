@@ -1190,8 +1190,8 @@ pre {
 
   /* 2. Controls the size, position, and STACKING of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 250px !important;
-    bottom: -120px !important;
+    width: 200px !important;
+    bottom: -100px !important;
     z-index: 1 !important; /* <-- Tucks the avatar behind the navbar */
   }
 
@@ -1203,7 +1203,7 @@ pre {
 
   /* 3. Pushes the main content down on ALL pages to make room */
   .intro-header {
-    margin-top: 10rem !important; 
+    margin-top: 40rem !important; 
   }
 
 }
