@@ -1242,8 +1242,8 @@ pre {
 
   /* 1. POSITION THE AVATAR ON THE LEFT */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 250px !important;
-    bottom: -140px !important;          /* Changed from -120px to move photo down */
+    width: 200px !important;
+    bottom: -110px !important;          /* Changed from -120px to move photo down */
     left: 15% !important;
     margin-left: 0 !important;
     transform: translateX(-50%) !important;
@@ -1257,8 +1257,8 @@ pre {
 
   /* 2. POSITION THE CONTENT ON THE RIGHT */
   .intro-header {
-    margin-top: 7rem !important;      /* Changed from 5rem to move content down */
-    margin-left: 33% !important;
+    margin-top: 9rem !important;      /* Changed from 5rem to move content down */
+    margin-left: 45% !important;
     width: 55% !important;
   }
 
