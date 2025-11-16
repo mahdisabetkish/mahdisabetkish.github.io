@@ -1139,8 +1139,8 @@ pre {
 
   /* 1. Controls the size and position of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 100px !important;
-    bottom: -60px !important;
+    width: 250px !important;
+    bottom: -120px !important;
   }
 
   /* 2. Pushes the main content down on ALL pages to make room */
