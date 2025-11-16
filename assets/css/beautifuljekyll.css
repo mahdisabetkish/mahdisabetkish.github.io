@@ -1145,7 +1145,7 @@ pre {
 
   /* 2. Pushes the main content down on ALL pages to make room */
   .intro-header {
-    margin-top: 15rem !important; 
+    margin-top: 5rem !important; 
   }
 
 }
