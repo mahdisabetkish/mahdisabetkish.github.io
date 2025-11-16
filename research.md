@@ -1,3 +1,5 @@
+### **Research**
+
 My research program is dedicated to bridging the gap between the theoretical elegance of pure mathematics and the practical power of machine learning. I am passionate about using foundational principles from abstract algebra to build the next generation of artificial intelligence models. My core focus is on developing learning frameworks that produce more **structured, robust, and data-efficient representations**, with primary applications in **computer vision** and **natural language processing**.
 
 The central idea of my work is to design models that learn to create an internal "map" of the data, where the relationships and transformations in the learned feature space accurately mirror the meaningful relationships in the original data. By enforcing this **structural consistency**, I aim to move beyond simple pattern recognition and toward models that possess a deeper, more semantic understanding. This approach directly addresses critical challenges in AI, including **model interpretability**, the need for **massive labeled datasets**, and the **logical consistency** of model outputs.
