@@ -2,6 +2,9 @@
 layout: page
 ---
 
+<!-- ==================== HTML Structure ==================== -->
+<!-- This is where the dynamic quote will be displayed. The JavaScript below will fill it in. -->
+
 <div style="text-align: center; padding: 2em 0;">
 
   <h2 style="font-size: 3em; font-weight: 700; margin-bottom: 0.25em; background: -webkit-linear-gradient(45deg, #003366, #336699); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
@@ -12,9 +15,52 @@ layout: page
     A researcher in Artificial Intelligence with a foundational Ph.D. in Pure Mathematics.
   </p>
 
-  <blockquote style="display: inline-block; max-width: 600px; margin: 2.5em auto; padding: 1.5em; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: left;">
-    <p style="font-size: 1.2em; font-style: italic; color: #333; margin-top: 0;">"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."</p>
-    <footer style="font-size: 0.9em; text-align: right; color: #777;">— Marie Curie</footer>
+  <blockquote id="quote-card" style="display: inline-block; max-width: 600px; margin: 2.5em auto; padding: 1.5em; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: left; min-height: 100px;">
+    
+    <!-- The JavaScript will insert the quote text here -->
+    <p id="dynamic-quote-text" style="font-size: 1.2em; font-style: italic; color: #333; margin-top: 0;"></p>
+    
+    <!-- The JavaScript will insert the author here -->
+    <footer id="dynamic-quote-author" style="font-size: 0.9em; text-align: right; color: #777;"></footer>
+
   </blockquote>
 
 </div>
+
+
+<!-- =================== JavaScript Logic =================== -->
+<!-- This script runs when the page loads, picks a random quote, and displays it. -->
+
+<script>
+  // --- Step 1: Define your list of quotes here ---
+  const quotes = [
+    {
+      text: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+      author: "Marie Curie"
+    },
+    {
+      text: "We choose to do these things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills.",
+      author: "John F. Kennedy"
+    },
+    {
+      text: "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
+      author: "Richard Feynman"
+    },
+    {
+      text: "The only way of discovering the limits of the possible is to venture a little way past them into the impossible.",
+      author: "Arthur C. Clarke"
+    },
+    {
+      text: "It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment.",
+      author: "Carl Friedrich Gauss"
+    }
+  ];
+
+  // --- Step 2: The script picks a random quote from the list ---
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const selectedQuote = quotes[randomIndex];
+
+  // --- Step 3: The script finds the HTML elements and inserts the quote ---
+  document.getElementById('dynamic-quote-text').innerText = `"${selectedQuote.text}"`;
+  document.getElementById('dynamic-quote-author').innerText = `— ${selectedQuote.author}`;
+</script>
