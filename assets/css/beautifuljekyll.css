@@ -1142,23 +1142,24 @@ pre {
 ==========================================================================
 --- */
 
+/* --- New, Updated Code --- */
 @media (min-width: 1200px) {
 
-  /* 1. Makes the invisible CONTAINER larger and positions it */
+  /* 1. Controls the size and position of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 250px !important;
-    bottom: -120px !important;
+    width: 200px !important;
+    bottom: -125px !important;  /* <-- MOVED THE IMAGE LOWER */
   }
 
-  /* 2. (NEW) Forces the IMAGE ITSELF to fill the larger container */
+  /* Forces the image itself to fill the larger container */
   .navbar-custom.top-nav-regular .avatar-container .avatar-img {
     width: 100% !important;
     height: 100% !important;
   }
 
-  /* 3. Pushes the main content down on ALL pages to make room */
+  /* 2. Pushes the main content down on ALL pages to make room */
   .intro-header {
-    margin-top: 10rem !important; 
+    margin-top: 14rem !important; /* <-- ADDED MORE SPACE FOR CONTENT */
   }
 
 }
