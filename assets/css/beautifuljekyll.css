@@ -1139,7 +1139,7 @@ pre {
 
   /* 1. Controls the size and position of the avatar */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 200px !important;
+    width: 100px !important;
     bottom: -145px !important;
   }
 
