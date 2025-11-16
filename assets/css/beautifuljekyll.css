@@ -23,7 +23,6 @@ layout: null
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
 }
-
 /* --- General --- */
 
 html {
@@ -1244,7 +1243,7 @@ pre {
   .navbar-custom.top-nav-regular .avatar-container {
     width: 200px !important;
     bottom: -110px !important;          /* Changed from -120px to move photo down */
-    left: 15% !important;
+    left: 25% !important;
     margin-left: 0 !important;
     transform: translateX(-50%) !important;
   }
