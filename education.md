@@ -11,7 +11,6 @@ Ranked first among eight students; GPA: 82.7/100
 ---
 
 **B.Sc. Mathematics and Applications** (2013 - 2017)
-*University of Gonabad, Razavi Khorasan Province, Iran*
 Ranked first among sixteen students; GPA: 81.25/100
 
 ---
