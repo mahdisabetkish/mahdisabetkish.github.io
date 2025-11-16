@@ -1258,7 +1258,7 @@ pre {
   /* 2. POSITION THE CONTENT ON THE RIGHT */
   .intro-header {
     margin-top: 9rem !important;      /* Changed from 5rem to move content down */
-    margin-left: 45% !important;
+    margin-left: 70% !important;
     width: 55% !important;
   }
 
