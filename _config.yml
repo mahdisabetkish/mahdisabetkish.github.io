@@ -15,6 +15,7 @@ author: Mahdi Sabet Kish
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
+  Research: "research"
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
 
@@ -127,6 +128,8 @@ author: Mahdi Sabet Kish
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
+  Research: "research"
+
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
 
