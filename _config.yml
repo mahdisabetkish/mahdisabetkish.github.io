@@ -17,6 +17,7 @@ navbar-links:
   Publications: "publications"
   Education: "education" 
   Research: "research"
+  Teaching: "teaching"
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
 
@@ -131,6 +132,7 @@ navbar-links:
   Publications: "publications"
   Education: "education" 
   Research: "research"
+  Teaching: "teaching"
 
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
