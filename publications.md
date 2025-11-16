@@ -1,6 +1,3 @@
-**A list of my papers.**
-
-
 ### Computer Vision & Machine Learning
 
 - **Semi-self-supervised learning for semantic segmentation in images with dense patterns**
