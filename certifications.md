@@ -1,5 +1,3 @@
-### **Certifications**
-
 To complement my formal academic training, I actively pursue online certifications to stay current with the latest tools and methodologies in machine learning and data science. Below are the key credentials I have earned.
 
 ---
