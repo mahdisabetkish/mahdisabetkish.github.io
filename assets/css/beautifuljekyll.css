@@ -1196,15 +1196,21 @@ pre {
 ==========================================================================
 --- */
 
+/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Asymmetric Layout - Adjusted Vertically)
+==========================================================================
+--- */
+
 @media (min-width: 1200px) {
 
   /* 1. POSITION THE AVATAR ON THE LEFT */
   .navbar-custom.top-nav-regular .avatar-container {
-    width: 250px !important;      /* Sets the size */
-    bottom: -120px !important;     /* How far it hangs down */
-    left: 35% !important;          /* Moves it horizontally to the left */
-    margin-left: 0 !important;     /* Resets the theme's centering */
-    transform: translateX(-50%) !important; /* Fine-tunes the centering on the left anchor */
+    width: 250px !important;
+    bottom: -140px !important;          /* Changed from -120px to move photo down */
+    left: 15% !important;
+    margin-left: 0 !important;
+    transform: translateX(-50%) !important;
   }
 
   /* Forces the image itself to fill the container */
@@ -1215,9 +1221,45 @@ pre {
 
   /* 2. POSITION THE CONTENT ON THE RIGHT */
   .intro-header {
-    margin-top: 5rem !important;      /* Vertical space from the navbar */
-    margin-left: 40% !important;     /* Pushes content to the right, creating the column */
-    width: 55% !important;           /* Constrains the width of the content */
+    margin-top: 7rem !important;      /* Changed from 5rem to move content down */
+    margin-left: 40% !important;
+    width: 55% !important;
+  }
+
+  /* 3. ALIGN THE TEXT WITHIN THE CONTENT TO THE LEFT */
+  .intro-header .page-heading,
+  .intro-header .post-heading {
+    text-align: left !important;
+  }
+
+}/* ---
+==========================================================================
+  CUSTOM AVATAR AND LAYOUT FIX (Asymmetric Layout - Adjusted Vertically)
+==========================================================================
+--- */
+
+@media (min-width: 1200px) {
+
+  /* 1. POSITION THE AVATAR ON THE LEFT */
+  .navbar-custom.top-nav-regular .avatar-container {
+    width: 250px !important;
+    bottom: -140px !important;          /* Changed from -120px to move photo down */
+    left: 15% !important;
+    margin-left: 0 !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* Forces the image itself to fill the container */
+  .navbar-custom.top-nav-regular .avatar-container .avatar-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* 2. POSITION THE CONTENT ON THE RIGHT */
+  .intro-header {
+    margin-top: 7rem !important;      /* Changed from 5rem to move content down */
+    margin-left: 33% !important;
+    width: 55% !important;
   }
 
   /* 3. ALIGN THE TEXT WITHIN THE CONTENT TO THE LEFT */
