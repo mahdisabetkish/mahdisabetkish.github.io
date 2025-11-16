@@ -18,6 +18,7 @@ navbar-links:
   Education: "education" 
   Research: "research"
   Teaching: "teaching"
+  Honors & Awards: "honors"
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
 
@@ -133,6 +134,7 @@ navbar-links:
   Education: "education" 
   Research: "research"
   Teaching: "teaching"
+  Honors & Awards: "honors"
 
   # To add a blog page, create a file named `blog.md` and uncomment the following line
   # Blog: "blog" 
