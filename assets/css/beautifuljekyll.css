@@ -1125,11 +1125,4 @@ pre {
   }
 }
 
-/* --- Custom Avatar Size Override --- */
-/* Increases the size of the profile photo on larger screens */
-@media (min-width: 1200px) {
-  .navbar-custom.top-nav-regular .avatar-container {
-    width: 300px;
-    bottom: -95px;
-  }
-}
+
