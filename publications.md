@@ -1,8 +1,5 @@
----
-layout: page
-title: Publications
-subtitle: A list of my papers.
----
+**A list of my papers.**
+
 
 ### Computer Vision & Machine Learning
 
