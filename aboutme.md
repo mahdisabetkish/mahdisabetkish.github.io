@@ -1,5 +1,3 @@
-### **Hello! I'm Mahdi.**
-
 I’m a researcher, a problem-solver, and a mathematician at heart.
 
 Ever since I started my studies, I've been captivated by the structure and elegance of mathematics—the way complex ideas can be built from a few simple, logical rules. During my PhD, I realized that the world of Artificial Intelligence, especially in areas like computer vision and language, was full of fascinating puzzles that could be looked at through this same mathematical lens.
