@@ -18,4 +18,4 @@ I believe that ideas are only as good as their implementation. I bring these con
 
 This website is where I share my projects, publications, and thoughts. Whether you’re a fellow researcher, a potential collaborator, or just someone curious about the intersection of math and AI, I’d be happy to connect.
 
-Feel free to reach out via [Email](mahdi.sabetkish@gmail.com).
+Feel free to reach out via Email(mahdi.sabetkish@gmail.com).
