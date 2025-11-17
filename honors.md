@@ -1,32 +1,18 @@
-I am honored to have received the following awards, scholarships, and distinctions in recognition of my academic and research contributions.
+This version is more personal and tells a story, making it perfect for an "About Me" or "Awards" page on your personal website. It sounds more like how you would explain your accomplishments in a conversation.
 
- **Major Awards & Distinctions**
+**Recognition & Milestones**
 
-*   **Khwarizmi Youth Award, 11th Period**
-    *   A national award recognizing outstanding achievements in research, innovation, and invention in Iran.
- 
-*   **Data Analysis Competition Finalist, Quera (2025)**
-    *   Achieved acceptance into the final rounds of a highly competitive national data analysis competition, demonstrating strong practical data science skills.
+My academic path has been shaped by a few key moments and recognitions that I'm proud to share.
 
-*   **Best Thesis Award, 5th Call for Collaborative Computing in Iran**
-    *   Awarded first place for my Master’s thesis, selected for its significant contribution to the field of computational science.
+**A Foundation of Excellence**
 
+From my first day as an undergraduate to my final day as a PhD candidate, I was supported by a **full, merit-based national scholarship**. This honor was awarded for outstanding performance, and I worked hard to live up to it by **graduating at the top of my class for all three of my degrees**. This consistent support allowed me to focus completely on my studies and research.
 
----
+**Recognition for My Work**
 
-### **Fellowships & Scholarships**
+Along the way, I was also honored to have my specific research and projects recognized:
 
-*   **Full Scholarship for Doctoral, Master's, and Bachelor's Degrees** (2013 - 2024)
-    *   Awarded a comprehensive, merit-based scholarship that provided full funding for the entire duration of my Ph.D., M.Sc., and B.Sc. studies in recognition of outstanding academic performance.
+*   My work in innovation was awarded the **Khwarizmi Youth Award**, a national prize for research and invention.
+*   My Master's thesis was selected for the **Best Thesis Award** for its contributions to computational science.
+*   My practical data science skills were put to the test in the **Quera Data Analysis Competition**, where I was a finalist.
 
----
-
-### **Academic Distinctions & Rankings**
-
-*   **Ranked First, Ph.D. in Pure Mathematics** (2024)
-
-*   **Ranked First, M.Sc. in Soft Computing** (2019)
-
-*   **Ranked First, B.Sc. in Mathematics and Applications** (2017)
-
----
