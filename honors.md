@@ -1,6 +1,3 @@
-This version is more personal and tells a story, making it perfect for an "About Me" or "Awards" page on your personal website. It sounds more like how you would explain your accomplishments in a conversation.
-
-**Recognition & Milestones**
 
 My academic path has been shaped by a few key moments and recognitions that I'm proud to share.
 
