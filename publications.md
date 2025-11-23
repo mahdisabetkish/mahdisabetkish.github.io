@@ -18,7 +18,3 @@ Borzooei, R.A., Aaly Kologani, M., **Sabet Kish, M.**, & Jun, Y.B. (2019). Fuzzy
 
 Borzooei, R.A., **Sabet Kish, M.**, Roh, E.H., & Aaly Kologani, M. (2019). Int-Soft Filters in Hoops. *International Journal of Fuzzy Logic and Intelligent Systems, 19*(3), 213-222.
 
-
-2.  **Natural Introduction:** The intro text is now warmer and frames your work as a personal journey.
-3.  **Better Headings (Option 2):** The headings "My Work in..." are more personal and engaging than just listing the fields.
-4.  **Clarity:** Your name is bolded to make your contributions easy to spot. The "et al." in the first paper is a standard way to shorten long author lists on a personal site.
