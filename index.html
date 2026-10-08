@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahdi Sabet Kish — Machine Learning Researcher</title>
+<meta name="description" content="Mahdi Sabet Kish's academic site: research in self-supervised learning, Bayesian uncertainty quantification, and machine learning for genomics and healthcare.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-name">Mahdi Sabet Kish</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#honors">Honors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex; gap:8px; align-items:center;">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" style="border-top:none;">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Mahdi Sabet Kish</h1>
+        <p class="role" id="role-text">Machine Learning Researcher — <span class="role-word">Self-Supervised Learning</span><span class="cursor"></span></p>
+        <p class="lede">
+          I work on learning methods that don't need large labeled datasets to be useful, and on
+          applying them honestly to high-dimensional biological and healthcare data. My background
+          is in mathematics; most of my current work is in Python and PyTorch, built around
+          reproducible pipelines run on HPC clusters.
+        </p>
+        <div class="hero-links">
+          <a class="pill" href="mailto:mahdi.sabetkish@gmail.com">✉ Email</a>
+          <a class="pill" href="https://github.com/mahdisabetkish" target="_blank" rel="noopener">⌁ GitHub</a>
+          <a class="pill" href="https://scholar.google.com/citations?user=VGUoU24AAAAJ" target="_blank" rel="noopener">▣ Google Scholar</a>
+          <a class="pill" href="https://huggingface.co/mahdisabetkish" target="_blank" rel="noopener">🤗 Hugging Face</a>
+          <a class="pill" href="https://hub.docker.com/u/mahdisabetkish" target="_blank" rel="noopener">🐳 Docker Hub</a>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><span class="num" data-count="9">0</span><span class="label">Open-source projects</span></div>
+          <div class="metric"><span class="num" data-count="4">0</span><span class="label">Live demos</span></div>
+        </div>
+      </div>
+      <div>
+        <img class="hero-photo" src="assets/img/Mahdi_Sabet_Kish_500.jpg" alt="Mahdi Sabet Kish">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== About ===================== -->
+  <section id="about">
+    <div class="wrap reveal">
+      <p class="section-kicker">About</p>
+      <h2 class="section-title">From algebra to applied machine learning</h2>
+      <div class="two-col" style="margin-top:24px;">
+        <div>
+          <p>
+            My PhD is in mathematics, in algebra, and for most of it I was working with
+            logical-algebraic structures that have nothing to do with neural networks. Somewhere
+            in the middle of that I got pulled into machine learning, first through a plant
+            phenomics project that needed someone comfortable with both the math and the coding,
+            and then on my own, through self-supervised learning.
+          </p>
+          <p>
+            What keeps me interested in SSL is the constraint it puts on you: you can't lean on
+            huge labeled datasets, so you have to think carefully about what structure in the data
+            you're actually exploiting. That same mindset is what drew me toward computational
+            biology. Gene expression data is high-dimensional, expensive to label, and often has
+            far more features than patients, which is exactly the setting where careless evaluation
+            gives you numbers that don't survive contact with a new dataset. Most of my recent
+            projects, on METABRIC, TCGA, and spatial transcriptomics data, are built around getting
+            that evaluation right first and the modeling second.
+          </p>
+        </div>
+        <div>
+          <p>
+            Day to day, that means Python, PyTorch, and Slurm, with config-driven pipelines so a
+            result can be rerun exactly, not just approximately, months later. I'd rather report a
+            model that's a bit weaker but measured honestly than one that looks better because of a
+            split that leaked information.
+          </p>
+          <p>
+            Outside of modeling, I've taught Python and mathematics courses, including a workshop
+            I designed and ran myself, and I keep most of my project code public, partly so the
+            evaluation choices I just described are checkable rather than taken on faith. Details
+            and code for individual projects are below, and the full publication record is on
+            <a href="https://scholar.google.com/citations?user=VGUoU24AAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Research ===================== -->
+  <section id="research">
+    <div class="wrap reveal">
+      <p class="section-kicker">Research</p>
+      <h2 class="section-title">What I work on</h2>
+      <p class="section-intro">
+        Four threads run through most of my projects. They overlap more often than they stay separate.
+      </p>
+      <div class="research-grid">
+        <div class="research-card">
+          <h3>Self-supervised learning</h3>
+          <p>Pretext tasks and contrastive objectives (SimCLR, Barlow Twins, masked autoencoding) for
+             learning representations without relying on labeled data, applied to both images and
+             tabular/omics data.</p>
+        </div>
+        <div class="research-card">
+          <h3>Bayesian uncertainty quantification</h3>
+          <p>MC dropout and Bayesian deep survival models for cases where knowing how confident a
+             model is matters as much as the prediction itself, particularly in clinical settings.</p>
+        </div>
+        <div class="research-card">
+          <h3>Machine learning for genomics &amp; healthcare</h3>
+          <p>Working with high-dimensional transcriptomic and histology data (METABRIC, TCGA, spatial
+             transcriptomics), where the main risk is evaluation that looks strong but doesn't hold
+             up out of sample.</p>
+        </div>
+        <div class="research-card">
+          <h3>Mathematical foundations</h3>
+          <p>A background in algebra and logical-algebraic structures that I still draw on when
+             thinking about what a model is actually learning, rather than only how well it scores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Projects ===================== -->
+  <section id="projects">
+    <div class="wrap reveal">
+      <p class="section-kicker">Projects</p>
+      <h2 class="section-title">Open-source work</h2>
+      <p class="section-intro">
+        All code is public on <a href="https://github.com/mahdisabetkish" target="_blank" rel="noopener">GitHub</a>.
+        A few include a live, interactive demo you can run in the browser.
+      </p>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ssl">Self-supervised learning</button>
+        <button class="filter-btn" data-filter="computational-biology">Computational biology</button>
+        <button class="filter-btn" data-filter="reinforcement-learning">Reinforcement learning</button>
+        <button class="filter-btn" data-filter="computer-vision">Computer vision</button>
+        <button class="filter-btn" data-filter="applied-ml">Applied ML</button>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project-card" data-tags="computational-biology,applied-ml">
+          <h3>Family homelessness early warning</h3>
+          <p class="desc">Forecasts which English local authorities will see a sharp rise in family
+            homelessness a year ahead, using only public Open Government Licence statistics. Reports
+            two tasks separately and is explicit about where the model beats a naive baseline and
+            where it doesn't.</p>
+          <div class="tag-row"><span class="tag">python</span><span class="tag">forecasting</span></div>
+          <div class="card-links">
+            <a href="https://mahdisabetkish.github.io/family-homelessness-early-warning/" target="_blank" rel="noopener">Live dashboard →</a>
+            <a href="https://github.com/mahdisabetkish/family-homelessness-early-warning" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="reinforcement-learning,computational-biology">
+          <h3>Parsimony</h3>
+          <p class="desc">A reinforcement learning agent (Rainbow DQN and PPO) that decides which
+            gene expression test to order next for a patient, trading diagnostic accuracy against
+            measurement cost, trained on TCGA pan-cancer data.</p>
+          <div class="tag-row"><span class="tag">rl</span><span class="tag">rainbow-dqn</span><span class="tag">ppo</span></div>
+          <div class="card-links">
+            <a href="https://mahdisabetkish.github.io/parsimony/" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/mahdisabetkish/parsimony" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="ssl,computational-biology">
+          <h3>Histology–omics fusion</h3>
+          <p class="desc">Multimodal fusion of spatial transcriptomics and histology images for
+            predicting cortical layers, using self-supervised pretraining before the fusion step.</p>
+          <div class="tag-row"><span class="tag">multimodal</span><span class="tag">self-supervised</span></div>
+          <div class="card-links">
+            <a href="https://mahdisabetkish.github.io/histology-omics-fusion/" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/mahdisabetkish/histology-omics-fusion" target="_blank" rel="noopener">Code</a>
+            <a href="https://hub.docker.com/r/mahdisabetkish/histology-omics-fusion" target="_blank" rel="noopener">🐳 Docker</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="computational-biology">
+          <h3>TCGA cancer type classifier</h3>
+          <p class="desc">Classifies five cancer types from RNA-Seq gene expression, comparing
+            logistic regression, random forest, and a small neural network, with a browser dashboard
+            for exploring the data and trying predictions live.</p>
+          <div class="tag-row"><span class="tag">rna-seq</span><span class="tag">classification</span></div>
+          <div class="card-links">
+            <a href="https://mahdisabetkish.github.io/tcga-cancer-type-classifier/" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/mahdisabetkish/tcga-cancer-type-classifier" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="computational-biology,ssl">
+          <h3>Bayesian survival analysis — METABRIC</h3>
+          <p class="desc">Bayesian deep survival models with MC dropout on the METABRIC breast
+            cancer cohort, with a focus on evaluating the resulting uncertainty estimates and
+            selective prediction rather than just point accuracy.</p>
+          <div class="tag-row"><span class="tag">bayesian</span><span class="tag">survival-analysis</span></div>
+          <div class="card-links">
+            <a href="https://github.com/mahdisabetkish/bayesian-survival-metabric" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="ssl,computational-biology">
+          <h3>AFA-SSL</h3>
+          <p class="desc">Label-efficient active feature acquisition: a self-supervised pretrained
+            predictor paired with a Gaussian feature model, applied to cancer gene expression data.</p>
+          <div class="tag-row"><span class="tag">active-feature-acquisition</span><span class="tag">self-supervised</span></div>
+          <div class="card-links">
+            <a href="https://github.com/mahdisabetkish/afa-ssl" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="computer-vision">
+          <h3>Vision2Words</h3>
+          <p class="desc">Image captioning on Flickr8k with an EfficientNet-B0 encoder and LSTM or
+            Transformer decoders. Includes a C++ inference binary on ONNX Runtime matching the
+            Python output, a Nextflow pipeline end to end, and a Gradio demo comparing both decoders.</p>
+          <div class="tag-row"><span class="tag">pytorch</span><span class="tag">onnx</span><span class="tag">nextflow</span></div>
+          <div class="card-links">
+            <a href="https://github.com/mahdisabetkish/Vision2Words" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/mahdisabetkish/vision2words-decoders" target="_blank" rel="noopener">🤗 Model</a>
+            <a href="https://hub.docker.com/r/mahdisabetkish/vision2words-app" target="_blank" rel="noopener">🐳 Docker</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="ssl,computer-vision">
+          <h3>Barlow Twins on CIFAR-10</h3>
+          <p class="desc">A from-scratch implementation of Barlow Twins for self-supervised
+            representation learning on CIFAR-10.</p>
+          <div class="tag-row"><span class="tag">self-supervised</span><span class="tag">pytorch</span></div>
+          <div class="card-links">
+            <a href="https://github.com/mahdisabetkish/barlow-twins-cifar10" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="ssl,computer-vision">
+          <h3>Self-Supervised SimCLR</h3>
+          <p class="desc">A SimCLR implementation for contrastive self-supervised representation learning.</p>
+          <div class="tag-row"><span class="tag">simclr</span><span class="tag">contrastive-learning</span></div>
+          <div class="card-links">
+            <a href="https://github.com/mahdisabetkish/Self-Supervised-SimCLR" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Publications ===================== -->
+  <section id="publications">
+    <div class="wrap reveal">
+      <p class="section-kicker">Publications</p>
+      <h2 class="section-title">Papers</h2>
+      <p class="section-intro">
+        Full record, including citation counts, on
+        <a href="https://scholar.google.com/citations?user=VGUoU24AAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+      </p>
+
+      <div class="pub-group">
+        <h3>Machine learning &amp; computer vision</h3>
+        <div class="pub-item">
+          <div class="pub-title">Semi-self-supervised learning for semantic segmentation in images with dense patterns</div>
+          <div class="pub-meta">K. Najafian, A. Ghanbari, <strong>M. Sabet Kish</strong>, M. Eramian, G.H. Shirdel, I. Stavness, L. Jin, F. Maleki — <em>Plant Phenomics</em>, 5, 0025 (2023) · 33 citations</div>
+        </div>
+      </div>
+
+      <div class="pub-group">
+        <h3>Algebra &amp; logical-algebraic structures</h3>
+        <div class="pub-item">
+          <div class="pub-title">Module Structures on Hoops</div>
+          <div class="pub-meta">R.A. Borzooei, <strong>M. Sabet Kish</strong>, M. Aaly Kologani — <em>New Mathematics and Natural Computation</em>, 20(3), 601–619 (2024)</div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">A note on Noetherian and Artinian hoops</div>
+          <div class="pub-meta"><strong>M. Sabet Kish</strong>, R.A. Borzooei, S.H. Jabbari, M. Aaly Kologani — <em>Discussiones Mathematicae – General Algebra and Applications</em>, 44(1), 177–198 (2024) · 1 citation</div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Double-framed soft filters in lattice implication algebras</div>
+          <div class="pub-meta">R.A. Borzooei, Y.B. Jun, M. Mohseni Takallo, S. Khademan, <strong>M. Sabet Kish</strong> — <em>Annals of the University of Craiova, Mathematics and Computer Science Series</em>, 47(2), 177–189 (2020) · 7 citations</div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Neutrosophic LI-ideals in lattice implication algebras</div>
+          <div class="pub-meta">R.A. Borzooei, <strong>M. Sabet Kish</strong>, Y.B. Jun — <em>Neutrosophic Sets and Systems</em>, 31, 274–293 (2020)</div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Fuzzy positive implicative filters of hoops based on fuzzy points</div>
+          <div class="pub-meta">R.A. Borzooei, M. Aaly Kologani, <strong>M. Sabet Kish</strong>, Y.B. Jun — <em>Mathematics</em>, 7(6), 566 (2019) · 15 citations</div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Int-Soft Filters in Hoops</div>
+          <div class="pub-meta">R.A. Borzooei, <strong>M. Sabet Kish</strong>, E.H. Roh, M. Aaly Kologani — <em>International Journal of Fuzzy Logic and Intelligent Systems</em>, 19(3), 213–222 (2019) · 5 citations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Education ===================== -->
+  <section id="education">
+    <div class="wrap reveal">
+      <p class="section-kicker">Education</p>
+      <h2 class="section-title">Degrees</h2>
+      <div class="timeline" style="margin-top:24px; max-width:640px;">
+        <div class="timeline-item">
+          <h3>Ph.D., Mathematics — Algebra</h3>
+          <div class="meta">Shahid Beheshti University, Tehran, Iran · 2019 – 2024</div>
+          <p>Ranked first in the program.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>M.Sc., Soft Computing — Logical Algebraic Structures</h3>
+          <div class="meta">Shahid Beheshti University, Tehran, Iran · 2017 – 2019</div>
+          <p>Ranked first among eight students.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>B.Sc., Mathematics and Applications</h3>
+          <div class="meta">2013 – 2017</div>
+          <p>Ranked first among sixteen students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Teaching ===================== -->
+  <section id="teaching">
+    <div class="wrap reveal two-col">
+      <div>
+        <p class="section-kicker">Teaching</p>
+        <h2 class="section-title">Teaching experience</h2>
+        <p style="color:var(--text-muted); margin-top:16px;">
+          I like connecting abstract material to something a student can actually run or compute.
+          That's as true for a proof in algebra as it is for a line of PyTorch code.
+        </p>
+        <div class="timeline" style="margin-top:24px;">
+          <div class="timeline-item">
+            <h3>Instructor — Zand Institute of Higher Education</h3>
+            <div class="meta">2025 – Present</div>
+            <p>Teaching Fuzzy Systems and Programming to Master's students, and Advanced Programming to Bachelor's students.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Instructor — Python Programming Workshop</h3>
+            <div class="meta">August 2023</div>
+            <p>Designed and delivered a hands-on workshop covering core programming concepts, data structures, and scientific computing applications.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Teaching Assistant — mathematics &amp; computer science courses</h3>
+            <div class="meta">2015 – 2019</div>
+            <p>Ran weekly problem-solving sessions, graded assignments and exams, and supported students during office hours.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1rem; margin-top:40px;">Courses taught</h3>
+        <ul style="color:var(--text-muted); padding-left:20px; font-size:0.92rem; line-height:1.9;">
+          <li>Fuzzy Systems (Master's) — Zand Institute, 2025–present</li>
+          <li>Programming (Master's) — Zand Institute, 2025–present</li>
+          <li>Advanced Programming (Bachelor's) — Zand Institute, 2025–present</li>
+          <li>Python Programming Workshop (Instructor) — Aug 2023</li>
+          <li>Introduction to Computers &amp; Programming</li>
+          <li>Algebra — Jan–May 2019</li>
+          <li>Calculus I &amp; II, Numerical Analysis — 2015–2017</li>
+          <li>Differential Equations — Feb–May 2015</li>
+          <li>Calculus I — Sep 2014–Jan 2015</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Honors ===================== -->
+  <section id="honors">
+    <div class="wrap reveal">
+      <p class="section-kicker">Honors &amp; Awards</p>
+      <h2 class="section-title">Recognition</h2>
+      <div class="timeline" style="margin-top:24px; max-width:640px;">
+        <div class="timeline-item">
+          <h3>National merit scholarship</h3>
+          <p>Full, merit-based scholarship covering undergraduate through PhD study, awarded for academic performance and renewed each year.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Khwarizmi Youth Award</h3>
+          <p>National award for research and invention.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Best Thesis Award</h3>
+          <p>Awarded for the Master's thesis, for its contribution to computational science.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Quera Data Analysis Competition — finalist</h3>
+          <p>Reached the finals of a national data science competition.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px;">Certifications</h2>
+      <div class="timeline" style="margin-top:24px; max-width:640px;">
+        <div class="timeline-item">
+          <h3>Supervised Machine Learning: Regression and Classification</h3>
+          <div class="meta">DeepLearning.AI &amp; Stanford University, via Coursera — March 2023</div>
+          <p><a href="https://coursera.org/verify/C4ZCKYX5LAKV" target="_blank" rel="noopener">Verify certificate →</a></p>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Science Math Skills</h3>
+          <div class="meta">Duke University, via Coursera — January 2023</div>
+          <p><a href="https://coursera.org/verify/FUUAEW2YBQK7" target="_blank" rel="noopener">Verify certificate →</a></p>
+        </div>
+        <div class="timeline-item">
+          <h3>Claude 101</h3>
+          <div class="meta">Anthropic Claude Academy — September 2026</div>
+          <p><a href="https://academy.claude.com/verify/be49f8c2f94c600fb1ecbb30ba3f18bd" target="_blank" rel="noopener">Verify certificate →</a></p>
+        </div>
+        <div class="timeline-item">
+          <h3>Claude Code 101</h3>
+          <div class="meta">Anthropic Claude Academy — September 2026</div>
+          <p><a href="https://academy.claude.com/verify/5e145986e182d8fb7565a4ccfcc3b6db" target="_blank" rel="noopener">Verify certificate →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section id="contact">
+    <div class="wrap reveal" style="text-align:center;">
+      <p class="section-kicker">Contact</p>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-intro" style="margin:0 auto 24px;">
+        Happy to hear from fellow researchers, potential collaborators, or anyone with questions about any of the projects above.
+      </p>
+      <div class="hero-links" style="justify-content:center;">
+        <a class="pill" href="mailto:mahdi.sabetkish@gmail.com">✉ mahdi.sabetkish@gmail.com</a>
+        <a class="pill" href="https://github.com/mahdisabetkish" target="_blank" rel="noopener">⌁ GitHub</a>
+        <a class="pill" href="https://scholar.google.com/citations?user=VGUoU24AAAAJ" target="_blank" rel="noopener">▣ Google Scholar</a>
+        <a class="pill" href="https://huggingface.co/mahdisabetkish" target="_blank" rel="noopener">🤗 Hugging Face</a>
+        <a class="pill" href="https://hub.docker.com/u/mahdisabetkish" target="_blank" rel="noopener">🐳 Docker Hub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Mahdi Sabet Kish
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
