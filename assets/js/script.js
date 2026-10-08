@@ -68,6 +68,8 @@
   if (roleEl) {
     var roles = [
       "Self-Supervised Learning",
+      "Computer Vision & NLP",
+      "Transformer Architectures",
       "Bayesian Uncertainty Quantification",
       "ML for Genomics & Healthcare",
       "Computational Biology"
