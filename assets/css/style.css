@@ -321,6 +321,9 @@ h2.section-title {
 .research-grid .research-card:nth-child(2), .project-grid .project-card:nth-child(2) { transition-delay: 0.08s; }
 .research-grid .research-card:nth-child(3), .project-grid .project-card:nth-child(3) { transition-delay: 0.14s; }
 .research-grid .research-card:nth-child(4), .project-grid .project-card:nth-child(4) { transition-delay: 0.2s; }
+.research-grid .research-card:nth-child(5) { transition-delay: 0.26s; }
+.research-grid .research-card:nth-child(6) { transition-delay: 0.32s; }
+.research-grid .research-card:nth-child(7) { transition-delay: 0.38s; }
 .project-grid .project-card:nth-child(5) { transition-delay: 0.26s; }
 .project-grid .project-card:nth-child(6) { transition-delay: 0.32s; }
 .project-grid .project-card:nth-child(7) { transition-delay: 0.38s; }

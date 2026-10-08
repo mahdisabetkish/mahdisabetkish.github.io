@@ -68,6 +68,8 @@
   if (roleEl) {
     var roles = [
       "Self-Supervised Learning",
+      "World Models & JEPA",
+      "Federated Learning",
       "Computer Vision & NLP",
       "Transformer Architectures",
       "Bayesian Uncertainty Quantification",

@@ -89,8 +89,9 @@
             What keeps me interested in SSL is the constraint it puts on you: you can't lean on
             huge labeled datasets, so you have to think carefully about what structure in the data
             you're actually exploiting. I've applied that across a few different areas rather than
-            just one: computer vision, transformer-based sequence and language models, and
-            computational biology. The biology side gets a bit more attention below because gene
+            just one: computer vision, transformer-based sequence and language models, world
+            models and non-contrastive representation learning, federated and distributed settings,
+            and computational biology. The biology side gets a bit more attention below because gene
             expression data is high-dimensional, expensive to label, and often has far more features
             than patients, which is exactly the setting where careless evaluation gives you numbers
             that don't survive contact with a new dataset. Most of my recent projects there, on
@@ -131,6 +132,18 @@
           <p>Pretext tasks and contrastive objectives (SimCLR, Barlow Twins, masked autoencoding) for
              learning representations without relying on labeled data, applied to both images and
              tabular/omics data.</p>
+        </div>
+        <div class="research-card">
+          <h3>World models &amp; non-contrastive SSL</h3>
+          <p>Non-contrastive joint-embedding methods (Barlow Twins, VICReg, JEPA-style predictive
+             architectures) that learn by predicting missing or future structure in the data rather
+             than by contrasting pairs of samples.</p>
+        </div>
+        <div class="research-card">
+          <h3>Federated &amp; distributed learning</h3>
+          <p>Extending self-supervised and representation learning to settings where data can't be
+             centralized, with an eye on how statistical heterogeneity across clients affects what a
+             shared model actually learns.</p>
         </div>
         <div class="research-card">
           <h3>Computer vision &amp; NLP</h3>
