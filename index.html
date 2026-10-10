@@ -235,15 +235,19 @@
           </div>
         </div>
 
-        <div class="project-card" data-tags="computational-biology">
-          <h3>TCGA cancer type classifier</h3>
-          <p class="desc">Classifies five cancer types from RNA-Seq gene expression, comparing
-            logistic regression, random forest, and a small neural network, with a browser dashboard
-            for exploring the data and trying predictions live.</p>
-          <div class="tag-row"><span class="tag">rna-seq</span><span class="tag">classification</span></div>
+        <div class="project-card" data-tags="computational-biology,ssl">
+          <h3>TCGA pan-cancer classifier</h3>
+          <p class="desc">A methods study on TCGA pan-cancer RNA-seq across 32 cancer types: a
+            permutation-equivariant Set Transformer encoder, VICReg self-supervised pretraining, and
+            a Bayesian output layer, benchmarked against logistic regression, a random forest, and a
+            plain MLP. The simple baselines win on every metric, and the write-up treats that as the
+            actual result rather than something to explain away.</p>
+          <div class="tag-row"><span class="tag">rna-seq</span><span class="tag">set-transformer</span><span class="tag">bayesian</span></div>
           <div class="card-links">
             <a href="https://mahdisabetkish.github.io/tcga-cancer-type-classifier/" target="_blank" rel="noopener">Live demo →</a>
             <a href="https://github.com/mahdisabetkish/tcga-cancer-type-classifier" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/mahdisabetkish/tcga-pancancer-set-transformer" target="_blank" rel="noopener">🤗 Model</a>
+            <a href="https://hub.docker.com/r/mahdisabetkish/tcga-pancancer-set-transformer" target="_blank" rel="noopener">🐳 Docker</a>
           </div>
         </div>
 
