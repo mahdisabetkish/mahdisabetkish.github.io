@@ -8,6 +8,7 @@ alone — this only fills in the block between the AUTO-PROJECTS markers.
 """
 
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -58,9 +59,13 @@ def humanize(name):
 
 
 def fetch_repos():
+    headers = {"Accept": "application/vnd.github.v3+json", "User-Agent": USERNAME}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(
         f"https://api.github.com/users/{USERNAME}/repos?per_page=100&type=public",
-        headers={"Accept": "application/vnd.github.v3+json", "User-Agent": USERNAME},
+        headers=headers,
     )
     with urllib.request.urlopen(req, timeout=20) as resp:
         return json.load(resp)
