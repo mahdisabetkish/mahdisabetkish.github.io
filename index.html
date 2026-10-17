@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mahdi Sabet Kish — Machine Learning Researcher</title>
-<meta name="description" content="Mahdi Sabet Kish's academic site: research in self-supervised learning, Bayesian uncertainty quantification, and machine learning for genomics and healthcare.">
+<meta name="description" content="Mahdi Sabet Kish's academic site: research in self-supervised learning, Bayesian uncertainty quantification, and machine learning for genomics, brain imaging and healthcare.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
         </p>
         <p class="lede">
           I work on learning methods that don't need large labeled datasets to be useful, and on
-          applying them carefully to high-dimensional biological and healthcare data. My background
+          applying them carefully to high-dimensional biological, medical imaging and healthcare data. My background
           is in mathematics; most of my current work is in Python and PyTorch, built around
           reproducible pipelines run on HPC clusters.
         </p>
@@ -59,8 +59,8 @@
           <a class="pill" href="https://hub.docker.com/u/mahdisabetkish" target="_blank" rel="noopener">🐳 Docker Hub</a>
         </div>
         <div class="metrics-row">
-          <div class="metric"><span class="num" data-count="9">0</span><span class="label">Open-source projects</span></div>
-          <div class="metric"><span class="num" data-count="4">0</span><span class="label">Live demos</span></div>
+          <div class="metric"><span class="num" data-count="10">0</span><span class="label">Open-source projects</span></div>
+          <div class="metric"><span class="num" data-count="5">0</span><span class="label">Live demos</span></div>
         </div>
       </div>
       <div>
@@ -100,7 +100,9 @@
             than patients, which is exactly the setting where careless evaluation gives you numbers
             that don't survive contact with a new dataset. Most of my recent projects there, on
             METABRIC, TCGA, and spatial transcriptomics data, are built around getting that
-            evaluation right first and the modeling second.
+            evaluation right first and the modeling second. The same approach now extends to brain
+            imaging: tumour segmentation on structural MRI and autism classification from
+            resting-state fMRI connectomes.
           </p>
         </div>
         <div>
@@ -167,6 +169,12 @@
              up out of sample.</p>
         </div>
         <div class="research-card">
+          <h3>Medical imaging &amp; neuroimaging</h3>
+          <p>Label-efficient segmentation of brain tumours on 3D MRI, and classification from
+             resting-state fMRI connectomes, where scans are expensive to annotate and each
+             subject's measurement is noisy (see brainssl).</p>
+        </div>
+        <div class="research-card">
           <h3>Mathematical foundations of ML &amp; DL</h3>
           <p>A background in algebra and logical-algebraic structures that I'm interested in carrying
              into model design itself, things like symmetry, invariance, and structural constraints
@@ -197,6 +205,23 @@
       </div>
 
       <div class="project-grid">
+
+        <div class="project-card" data-tags="ssl,computer-vision,computational-biology">
+          <h3>brainssl: brain MRI and fMRI</h3>
+          <p class="desc">Label-efficient learning on brain imaging. A 3D U-Net pretrained without
+            labels by reconstructing hidden tissue from its mirror image, for tumour segmentation
+            on MRI, and a connectome classifier trained on each scan's own noise for autism versus
+            control on resting-state fMRI (ABIDE I). Includes a Nextflow pipeline and a Rust inference binary.</p>
+          <div class="tag-row"><span class="tag">mri</span><span class="tag">fmri</span><span class="tag">self-supervised</span><span class="tag">rust</span></div>
+          <div class="card-links">
+            <a href="https://mahdisabetkish.github.io/brainssl/" target="_blank" rel="noopener">Live dashboard →</a>
+            <a href="https://github.com/mahdisabetkish/brainssl" target="_blank" rel="noopener">Code</a>
+            <a href="https://mahdisabetkish.github.io/brainssl/docs/" target="_blank" rel="noopener">Docs</a>
+            <a href="https://huggingface.co/mahdisabetkish/brainssl-tumour-segmentation" target="_blank" rel="noopener">🤗 Segmentation model</a>
+            <a href="https://huggingface.co/mahdisabetkish/brainssl-abide-connectome" target="_blank" rel="noopener">🤗 Connectome model</a>
+            <a href="https://hub.docker.com/r/mahdisabetkish/brainssl" target="_blank" rel="noopener">🐳 Docker</a>
+          </div>
+        </div>
 
         <div class="project-card" data-tags="computational-biology,applied-ml">
           <h3>Family homelessness early warning</h3>
@@ -305,15 +330,6 @@
         </div>
 
         <!-- AUTO-PROJECTS:START -->
-        <div class="project-card" data-tags="ssl">
-          <h3>Brainssl</h3>
-          <p class="desc">Label-efficient learning on brain MRI and fMRI: bilateral self-supervised U-Net for tumour segmentation (BraTS/MSD) and a noise-aware connectome classifier for autism (ABIDE I), with a trust audit, Nextflow, Docker and Rust inference.</p>
-          <div class="tag-row"><span class="tag">3d-unet</span><span class="tag">abide</span><span class="tag">brain-tumor-segmentation</span></div>
-          <div class="card-links">
-            <a href="https://mahdisabetkish.github.io/brainssl/" target="_blank" rel="noopener">Live demo →</a>
-            <a href="https://github.com/mahdisabetkish/brainssl" target="_blank" rel="noopener">Code</a>
-          </div>
-        </div>
         <!-- AUTO-PROJECTS:END -->
 
       </div>

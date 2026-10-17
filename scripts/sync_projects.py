@@ -30,6 +30,7 @@ CURATED_REPOS = {
     "vision2words",
     "barlow-twins-cifar10",
     "self-supervised-simclr",
+    "brainssl",
 }
 
 # Repos that should never appear as a project card.

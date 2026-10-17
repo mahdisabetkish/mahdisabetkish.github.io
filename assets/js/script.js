@@ -74,6 +74,7 @@
       "Transformer Architectures",
       "Bayesian Uncertainty Quantification",
       "ML for Genomics & Healthcare",
+      "Medical Imaging & Neuroimaging",
       "Computational Biology"
     ];
     var roleIdx = 0;
